@@ -1,4 +1,6 @@
 import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton } from '../components/Complete'
 
 <section className="mdx-page">
 
@@ -14,6 +16,41 @@ const lastname = 'smith'
 ```
 
 </div>
-  <Link to="/posts" className="btn center-btn">all posts</Link>
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>
+<div className="nice-text">
+  <h3>nice text </h3>
+  <FiInfo className="nice-text-icon"> </FiInfo>
+  Mlkshk williamsburg cardigan food truck affogato occupy. Squid try-hard banjo brooklyn. Mumblecore bicycle rights woke, yuccie cray man braid vegan plaid retro. Pork belly neutra migas prism kitsch vice hammock snackwave fam bushwick umami kickstarter flannel. Snackwave shabby chic skateboard bespoke. Bitters pabst jianbing austin hammock cronut try-hard celiac. 90's distillery pork belly, cardigan everyday carry pug shabby chic occupy scenester sartorial gentrify.
+</div>
+<h2> React components </h2>
+  <Counter />
+
+```jsx
+import React from 'react'
+import styled from 'styled-components'
+import { AiOutlineLike } from 'react-icons/ai'
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+<LikeButton />
 
 </section>
