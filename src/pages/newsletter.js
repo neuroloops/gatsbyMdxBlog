@@ -13,7 +13,7 @@ const NewsLetter = () => {
             method="POST"
             netlify-honeypot="bot-field"
             data-netlify="true"
-            // action="/success"
+            action="/success"
           >
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="test-contact" />
