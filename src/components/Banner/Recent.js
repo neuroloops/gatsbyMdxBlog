@@ -46,7 +46,6 @@ const Recent = () => {
           </Link>
         )
       })}
-      Banner Recent
     </Wrapper>
   )
 }
