@@ -9,7 +9,7 @@ const About = () => {
     <Wrapper>
       <Title title="about me" />
       <StaticImage
-        stc="../../assets/banner-about.jpeg"
+        src="../../assets/banner-about.jpeg"
         layout="fixed"
         width={100}
         height={100}
