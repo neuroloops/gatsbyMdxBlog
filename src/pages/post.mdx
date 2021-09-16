@@ -1,10 +1,12 @@
 import { Link } from 'gatsby'
 import { FiInfo } from 'react-icons/fi'
-import { Counter, LikeButton, RegVideo } from '../components/Complete'
+import { Counter, LikeButton, RegVideo, Video } from '../components/Complete'
 
 <section className="mdx-page">
 
 ## my first mdx | page post
+
+<Video src="https://www.youtube.com/embed/-pHhb4biR9k" title="woaow" />
 
 **I'm baby hashtag wayfarers sriracha post-ironic direct trade put a bird on it, cred mumblecore deep v blue bottle four dollar toast.** Occupy kickstarter cardigan vexillologist brunch tumeric banh mi slow-carb seitan authentic williamsburg chillwave small batch pinterest. Typewriter yr photo booth, godard banjo intelligentsia 8-bit beard tumblr whatever vaporware synth pickled. Green juice tumeric four loko whatever hashtag, butcher shabby chic sriracha cronut wayfarers echo park ethical photo booth. _Dreamcatcher kale chips blog typewriter cornhole, tattooed succulents authentic williamsburg brunch meggings vape four dollar toast portland taiyaki_.
 
@@ -53,11 +55,21 @@ const LikeButton = () => {
     </Wrapper>
   )
 }
+;<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
 ```
 
 <LikeButton />
 <h2>video components</h2>
 <RegVideo />
+
 <Link to="/posts" className="btn center-btn">
   all posts
 </Link>
