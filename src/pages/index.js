@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Hero showPerson />
-      <RegVideo />
+
       <Posts posts={posts} title="recently published" />
     </Layout>
   )
