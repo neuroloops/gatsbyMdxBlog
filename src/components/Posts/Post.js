@@ -9,7 +9,9 @@ const Post = ({ excerpt, frontmatter }) => {
   const { title, image, slug, date, category, readTime } = frontmatter
   return (
     <Wrapper>
-      <GatsbyImage image={getImage(image)} alt={title} className="img" />
+      <Link to={`/posts/${slug}`} className="link">
+        <GatsbyImage image={getImage(image)} alt={title} className="img" />
+      </Link>
       <div className="info">
         <span className="category">{category}</span>
         <h3>{title}</h3>
