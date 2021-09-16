@@ -1,5 +1,8 @@
 [[redirects]]
   from = "/*"
   to = "https://gallant-mcclintock-d55c75.netlify.app"
+[build]
+  publish = "public"
+
 [[plugins]]
-package = "@netlify/plugin-gatsby"
+  package = "netlify-plugin-gatsby-cache"
