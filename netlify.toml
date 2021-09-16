@@ -1,3 +1,5 @@
 [[redirects]]
   from = "/*"
   to = "https://gallant-mcclintock-d55c75.netlify.app"
+[[plugins]]
+package = "@netlify/plugin-gatsby"
