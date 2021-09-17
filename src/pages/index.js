@@ -3,7 +3,6 @@ import Hero from '../components/Hero'
 import Layout from '../components/Layout'
 import Posts from '../components/Posts'
 import { graphql } from 'gatsby'
-import { Video } from '../components/Complete'
 
 const IndexPage = ({ data }) => {
   const {
